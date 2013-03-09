@@ -1,0 +1,20 @@
+{
+  "name": "mongoose-couch",
+  "version": "0.0.1",
+  "private": true,
+  "main": "lib/index.js",
+  "dependencies": {
+    "cradle": "0.6.4",
+    "lodash": "1.0.1",
+    "hooks": "0.2.1",
+    "ms": "0.1.0",
+    "sliced": "0.0.3",
+    "muri": "0.3.1",
+    "mpromise": "0.2.1",
+    "mpath": "0.1.1"
+  },
+  "devDependencies": {
+    "should": "~1.2.2",
+    "mocha": "~1.8.1"
+  }
+}
