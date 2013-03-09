@@ -2,7 +2,7 @@ var mongoose = require('./lib/index');
 var Schema = mongoose.Schema;
 var cradle = require('cradle');
 
-var db = new (cradle.Connection)('http://localhost', 5984, {
+mongoose.connect('http://localhost', 5984, {
   cache: false,
   raw: false
 });
@@ -35,8 +35,7 @@ var AccountSchema = new Schema({
     'default': ['lead']
   }
 }, {
-  database: 'testy-mcgee',
-  connection: db
+  collection: 'testy-mcgee'
 });
 
 module.exports = Account = mongoose.model('Account', AccountSchema);
